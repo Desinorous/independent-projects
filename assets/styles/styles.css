@@ -1,54 +1,56 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-:root{
-    --font-heading1: "Poppins", "sans-serif";
-    --primary-color: #1EBFC1;
+:root {
+    --font-heading1: 'Poppins', 'sans-serif';
+    --primary-color: #1ebfc1;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-html, body{
+html,
+body {
     scroll-behavior: smooth;
     --webkit-scroll-behavior: smooth;
 }
 
-body{
+body {
     font-size: 1.6rem;
-    font-family: "Poppins", "sans-serif";
+    font-family: 'Poppins', 'sans-serif';
 }
 
 /* ========================== Common ============================ */
-.content{
+.content {
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.btn{
+.btn {
+    display: inline-block;
     width: 108px;
     height: 48px;
     border-radius: 6px;
-    border: 1px solid var(--primary-color);  
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
     text-align: center;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
-    font-style: normal;
     font-weight: 600;
-    background: none;
+    font-style: normal;
     cursor: pointer;
+    line-height: 3;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* ===================================== header ========================================= */
-.header-content{
+.header-content {
     position: sticky;
     top: -38px;
     z-index: 1;
@@ -58,92 +60,91 @@ a{
     -webkit-backdrop-filter: blur(5px) brightness(90%);
 }
 
-.header-content .content .body{
+.header-content .content .body {
     display: flex;
     align-items: center;
     padding: 57px 0 8px;
 }
 
-.header-content .navbar{
+.header-content .navbar {
     margin-left: auto;
 }
 
-.header-content .navbar ul{
+.header-content .navbar ul {
     display: flex;
     margin-right: 123px;
 }
 
-.header-content .content .navbar a{
-    color: #2F3A3B;
+.header-content .content .navbar a {
+    color: #2f3a3b;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
     padding: 10px 19px;
 }
 
-.header-content .content .navbar a:hover{
-    color: #2F3A3B;
+.header-content .content .navbar a:hover {
+    color: #2f3a3b;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-.header-content .content .btn-left{
+.header-content .content .btn-left {
     border: none;
     color: #494949;
     font-weight: 400;
 }
 
-.header-content .btn:hover{
+.header-content .btn:hover {
     background-color: var(--primary-color);
     color: #ffff;
 }
 
 /* ======================================== hero =============================================== */
-.hero .body{
+.hero .body {
     display: flex;
     gap: 36px;
     padding: 42px 0 79px;
 }
 
-.hero .info{
+.hero .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.hero .body .info .sub-title{
-    color: #767E7E;
+.hero .body .info .sub-title {
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-.hero .body .info .title{
+.hero .body .info .title {
     margin-top: 18px;
     min-width: 460px;
-    color: #0D1111;
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.16; /* 116.129% */
 }
 
-.hero .info .desc{
+.hero .info .desc {
     margin-top: 46px;
     width: 365px;
-    color: #9DA6A5;
+    color: #9da6a5;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.77; /* 177.778% */
 }
 
-
-.hero .btn-hero{
+.hero .btn-hero {
     min-width: 186px;
     height: 68px;
-    color: #FFF;
+    color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
     background-color: var(--primary-color);
@@ -151,18 +152,18 @@ a{
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .btn-hero:hover{
+.hero .btn-hero:hover {
     background-color: #ffff;
     color: var(--primary-color);
 }
 
-.hero .button{
+.hero .button {
     margin-top: 52px;
     display: flex;
     align-items: center;
 }
 
-.hero .button .play-button{
+.hero .button .play-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,25 +177,25 @@ a{
     cursor: pointer;
 }
 
-.hero .picture{
+.hero .picture {
     position: relative;
 }
 
-.hero .picture .picture-first{
+.hero .picture .picture-first {
     width: 576px;
     height: 631px;
     object-fit: cover;
 }
 
-.hero .picture strong{
-    color: #0D1111;
+.hero .picture strong {
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 1rem;
     font-weight: 500;
 }
 
 /* card book */
-.hero .picture .card-book{
+.hero .picture .card-book {
     position: absolute;
     top: 149px;
     left: -40px;
@@ -205,20 +206,20 @@ a{
     width: 157px;
     height: 75px;
     border-radius: 18px;
-    background: #FEFEFD;
+    background: #fefefd;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .picture .card-book strong{
+.hero .picture .card-book strong {
     display: inline-block;
     width: 55px;
 }
- 
-.hero .picture .card-book .card{
+
+.hero .picture .card-book .card {
     position: relative;
 }
 
-.hero .picture .card-book .book-second{
+.hero .picture .card-book .book-second {
     position: absolute;
     z-index: 1;
     left: 4px;
@@ -227,7 +228,7 @@ a{
 }
 
 /* card schedules */
-.hero .card-schedules{
+.hero .card-schedules {
     position: absolute;
     bottom: 46px;
     left: -70px;
@@ -238,23 +239,23 @@ a{
     width: 124px;
     height: 135px;
     border-radius: 24px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .card-schedules .card{
+.hero .card-schedules .card {
     display: flex;
     margin-top: 16px;
     flex-direction: column;
     gap: 12px;
 }
 
-.hero .card-schedules .card-end{
+.hero .card-schedules .card-end {
     text-align: center;
 }
 
 /* card students */
-.hero .picture .students{
+.hero .picture .students {
     position: absolute;
     right: 45px;
     bottom: 41px;
@@ -265,40 +266,40 @@ a{
     width: 207px;
     height: 90px;
     border-radius: 24px;
-    background: #FEFEFD;
+    background: #fefefd;
     box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .picture .students strong{
+.hero .picture .students strong {
     display: block;
     margin-left: 35px;
 }
 
 .hero .picture .students img,
-.hero .picture .numper span{
+.hero .picture .numper span {
     width: 33px;
     height: 33px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.hero .picture .students img+img{
+.hero .picture .students img + img {
     margin-left: -5px;
 }
 
-.hero .picture .numper{
+.hero .picture .numper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: -5px;
 }
 
-.hero .picture .numper span{
+.hero .picture .numper span {
     display: flex;
     margin-left: -5px;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: #fff;
     font-family: var(--font-heading1);
     font-size: 1rem;
     font-weight: 500;
@@ -306,110 +307,109 @@ a{
 }
 
 /* =========================================== features ===================================================== */
-.features{
+.features {
     padding-top: 130px;
 }
 
-.features .body{
+.features .body {
     width: calc(100% - 146px);
-
 }
-.features .body .title-feature{
-    color: #767E7E;
+.features .body .title-feature {
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.features .body .title{
+.features .body .title {
     max-width: 577px;
     margin-top: 18px;
-    color: #0D1111;
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1.33; /* 133.333% */
 }
 
-.features .body .desc{
+.features .body .desc {
     max-width: 590px;
     margin-top: 18px;
-    color: #767E7E;
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: normal;
 }
 
-.features .items{
+.features .items {
     display: flex;
     margin-top: 80px;
     justify-content: space-between;
 }
 
-.features .items .feature-item{
+.features .items .feature-item {
     width: 22%;
 }
 
-.features .items .title{
-    color: #0D1111;
+.features .items .title {
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 2rem;
     font-weight: 600;
-    color: #0D1111;
+    color: #0d1111;
 }
 
-.features .items .desc{
+.features .items .desc {
     margin-top: 16px;
-    color: #9DA6A5;
+    color: #9da6a5;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.68; /* 168.75% */
 }
 
-.features .items h3{
+.features .items h3 {
     margin-top: 26px;
 }
 
 /* ================================================= Courses ================================================= */
-.courses{
+.courses {
     padding-top: 130px;
 }
 
-.courses .body .sub-title{
-    color: #767E7E;
+.courses .body .sub-title {
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.2rem;
     font-weight: 700;
 }
 
-.courses .body .title{
+.courses .body .title {
     margin-top: 18px;
-    color: #0D1111;
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 4.2rem;
     font-weight: 700;
 }
 
-.courses .body .info{
+.courses .body .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.courses .info .desc{
+.courses .info .desc {
     margin-top: 19px;
     max-width: 525px;
-    color: #767E7E;
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.77; /* 177.778% */
 }
 
-.courses .info .view-course{
-    color: #1EBFC1;
+.courses .info .view-course {
+    color: #1ebfc1;
     font-family: var(--font-heading1);
     font-size: 1.4rem;
     font-weight: 700;
@@ -421,38 +421,36 @@ a{
     text-underline-position: from-font;
 }
 
-.courses .course-items{
+.courses .course-items {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
     gap: 47px;
 }
 
-.courses .course-items .item{
+.courses .course-items .item {
     position: relative;
     width: 33.33%;
 }
 
-.courses .course-items .images{
+.courses .course-items .images {
     width: 100%;
     height: 393px;
     object-fit: cover;
     border-radius: 8px;
     opacity: 0.35;
-    background: #D0EFED;
+    background: #d0efed;
     position: relative;
     top: 0;
     transition: top 0.5s ease, opacity 0.5s ease;
 }
 
-.courses .course-items .images:hover{
+.courses .course-items .images:hover {
     opacity: 1;
     top: -70px;
 }
 
-
-
-.courses .info-item{
+.courses .info-item {
     display: flex;
     position: absolute;
     bottom: -124px;
@@ -461,67 +459,67 @@ a{
     width: 325px;
     height: 195px;
     border-radius: 8px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
 }
 
-.courses .info-item:hover{
+.courses .info-item:hover {
     box-shadow: 0px 20px 90px 0px rgba(0, 0, 0, 0.2);
 }
 
-.courses .info-item .sub-body{
+.courses .info-item .sub-body {
     padding: 20px 0 0 25px;
 }
 
-.courses .info-item .title{
-    color: #0D1111;
+.courses .info-item .title {
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 2.2rem;
     font-weight: 700;
 }
 
-.courses .info-item .price{
+.courses .info-item .price {
     display: inline-block;
     margin-top: 30px;
-    color: #767E7E;
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-.courses .info-item strong{
-    color: #0D1111;
+.courses .info-item strong {
+    color: #0d1111;
     font-family: var(--font-heading1);
     font-size: 22px;
     font-weight: 700;
 }
 
-.courses .info-item .item-desc{
+.courses .info-item .item-desc {
     margin-top: 10px;
-    color: #9DA6A5;
+    color: #9da6a5;
     font-family: var(--font-heading1);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-.courses .details{
+.courses .details {
     display: flex;
     gap: 10px;
 }
 
-.courses .details span{
+.courses .details span {
     display: inline-flex;
     align-items: center;
     margin-top: 28px;
-    color: #9DA6A5;
+    color: #9da6a5;
     font-family: var(--font-heading1);
     font-size: 1.4rem;
     font-weight: 400;
 }
 
-.courses .details span::before{
+.courses .details span::before {
     display: inline-block;
-    content: "";
+    content: '';
     width: 6px;
     margin-right: 10px;
     height: 6px;
@@ -530,27 +528,27 @@ a{
 }
 
 /* =========================================== Statistic =========================================================== */
-.statistic{
+.statistic {
     margin: 390px 0 100px 0;
 }
 
-.statistic .body{
+.statistic .body {
     display: flex;
     justify-content: center;
     gap: 202px;
 }
 
-.statistic strong{
-    color: #0D1111;
+.statistic strong {
+    color: #0d1111;
     text-align: center;
     font-family: var(--font-heading1);
     font-size: 6.2rem;
     font-weight: 700;
 }
 
-.statistic .desc{
+.statistic .desc {
     margin-top: 11px;
-    color: #767E7E;
+    color: #767e7e;
     text-align: center;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
@@ -558,41 +556,41 @@ a{
 }
 
 /* ================================================ Feedback ====================================================== */
-.feedback{
+.feedback {
     padding: 164px 0 37px 0;
 }
 
-.feedback .body{
+.feedback .body {
     display: flex;
     gap: 72px;
     justify-content: space-between;
 }
 
-.feedback .info .quote{
+.feedback .info .quote {
     margin-top: 37px;
 }
 
-.feedback .body .desc{
+.feedback .body .desc {
     margin-top: 27px;
     max-width: 435px;
-    color: #5D6564;
+    color: #5d6564;
     font-family: var(--font-heading1);
     font-size: 3.3rem;
     font-weight: 400;
     line-height: 1.5; /* 150% */
 }
 
-.feedback .info .name{
+.feedback .info .name {
     position: relative;
     margin-top: 33px;
-    color: #767E7E;
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
     padding-left: 13px;
 }
 
-.feedback .info .name strong{
+.feedback .info .name strong {
     display: inline-flex;
     align-items: center;
     color: #070707;
@@ -601,21 +599,21 @@ a{
     font-weight: 500;
 }
 
-.feedback .info .name strong::before{
+.feedback .info .name strong::before {
     position: absolute;
     left: 0;
-    content: "";
+    content: '';
     display: inline-block;
     width: 8px;
     height: 2px;
     background: #070707;
 }
 
-.feedback .play-btn{
+.feedback .play-btn {
     margin-top: 52px;
 }
 
-.feedback .play-btn .click{
+.feedback .play-btn .click {
     width: 50px;
     height: 50px;
     border: none;
@@ -625,31 +623,31 @@ a{
     cursor: pointer;
 }
 
-.feedback .play-btn .click:last-of-type{
+.feedback .play-btn .click:last-of-type {
     margin-left: 30px;
 }
 
-.feedback .play-btn .click:hover{
+.feedback .play-btn .click:hover {
     background-color: #ffff;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
-.feedback .background-img{
+.feedback .background-img {
     position: relative;
     flex-grow: 1;
 }
 
-.feedback .background-img img:nth-of-type(3){
+.feedback .background-img img:nth-of-type(3) {
     position: absolute;
     top: 107px;
     right: 171px;
     width: 235px;
-    height: 235px;  
+    height: 235px;
     border-radius: 50%;
 }
 
-.feedback .background-img img:nth-of-type(2){
+.feedback .background-img img:nth-of-type(2) {
     position: absolute;
     top: 0;
     left: 144px;
@@ -658,7 +656,7 @@ a{
     border-radius: 50%;
 }
 
-.feedback .background-img img:first-of-type{
+.feedback .background-img img:first-of-type {
     position: absolute;
     right: 0;
     top: 19px;
@@ -669,109 +667,108 @@ a{
 
 .feedback .background-img img:nth-of-type(4),
 .feedback .background-img img:nth-of-type(5),
-.feedback .background-img img:nth-of-type(6){
+.feedback .background-img img:nth-of-type(6) {
     width: 78px;
     height: 78px;
     border-radius: 50%;
 }
 
-.feedback .background-img img:nth-of-type(4){
+.feedback .background-img img:nth-of-type(4) {
     position: absolute;
     left: 0;
     bottom: 100px;
 }
 
-.feedback .background-img img:nth-of-type(5){
+.feedback .background-img img:nth-of-type(5) {
     position: absolute;
     bottom: -37px;
     left: 190px;
 }
 
-.feedback .background-img img:nth-of-type(6){
+.feedback .background-img img:nth-of-type(6) {
     position: absolute;
     bottom: 0;
     right: 32px;
 }
 
 /* =========================================== Join ================================================= */
-.join{
+.join {
     margin-top: 130px;
-    background: #DEF6F5;
+    background: #def6f5;
 }
 
-.join .body{
+.join .body {
     display: flex;
     gap: 410px;
     align-items: center;
     height: 272px;
 }
 
-.join .info .title{
+.join .info .title {
     color: #070707;
     font-family: var(--font-heading1);
     font-size: 4.2rem;
     font-weight: 700;
 }
 
-.join .info .desc{
+.join .info .desc {
     margin-top: 18px;
-    color: #767E7E;
+    color: #767e7e;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 400;
 }
 
-.join .body .btn-join{
+.join .body .btn-join {
     width: 186px;
     height: 68px;
     border-radius: 14px;
-    background: var(--primary-color);    
-    color: #FFF;
+    background: var(--primary-color);
+    color: #fff;
     font-size: 1.8rem;
 }
 
-.join .body .btn-join:hover{
-    background: #ffff;    
+.join .body .btn-join:hover {
+    background: #ffff;
     color: var(--primary-color);
 }
 
-
 /* ================================================ Footer ============================================================== */
-.footer{
+.footer {
     padding: 130px 0 50px 0;
 }
 
-.footer .body .sub-body{
+.footer .body .sub-body {
     display: flex;
     gap: 140px;
 }
 
-.footer .body .item .title{
-    color: #2E2E2E;
+.footer .body .item .title {
+    color: #2e2e2e;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.footer .item ul li:first-child{
+.footer .item ul li:first-child {
     margin-top: 25px;
 }
 
-.footer .item ul li+li{
+.footer .item ul li + li {
     margin-top: 21px;
 }
 
-.footer .item ul li a{
+.footer .item ul li a {
     color: #535353;
     font-family: var(--font-heading1);
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-.footer .body strong{
+.footer .body strong {
     margin-top: 80px;
     display: block;
-    color: #B0B5B4;
+    color: #b0b5b4;
     font-family: var(--font-heading1);
     font-size: 1.8rem;
     font-weight: 400;
